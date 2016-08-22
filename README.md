@@ -16,7 +16,7 @@ Array.prototype.reduceRight
 ```
 arr.indexOf('1') !="-1";
 arr.filter(function(item){})
-arr.forEach(function(index,item){})
+arr.forEach(function(item,index){})
 arr.map(function(item,index){})
 arr.reduice(function(prev,next){},{})
 ```
