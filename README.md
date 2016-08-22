@@ -20,3 +20,55 @@ arr.forEach(function(item,index){})
 arr.map(function(item,index){})
 arr.reduice(function(prev,next){},{})
 ```
+
+数组是一组按次序排序的值，任何类型的数据，都可以放入数组。
+```
+var  arr = [
+  {a:1},
+  [1,2,3],
+  function(){return true}
+]
+arr[0] //object {a:1}
+```
+多维数组
+```
+var a = [
+  [1,2],
+  [3,4]
+]
+a[0][1]//2
+```
+数组属于一种特殊的对象。typeof运算符会返回数组的类型是object。
+```
+typeof [1,2] //'object'
+
+var arr = ['a', 'b', 'c'];
+console.log(Object.keys(arr)) //// ["0", "1", "2"]
+
+```
+
+in运算符
+```
+var arr = [];
+arr[100] = 'a';
+100 in arr // true
+1 in arr // false
+```
+
+```
+var a = [1, 2, 3];
+
+for (var i in a) {
+  console.log(a[i]);
+}
+// 1
+// 2
+// 3
+
+
+var colors = ['red', 'green', 'blue'];
+colors.forEach(function (color) {
+  console.log(color);
+});
+```
+
